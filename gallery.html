@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  background-color: black;
+ color: white;
+  line-height: 1.6;
+
+}
+
+.menu {
+  float: left;
+  width: 20%;
+  background-color: #222;
+}
+
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #444;
+  color: white;
+}
+
+.menuitem:hover {
+  background-color: #333;
+}
+
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+.right {
+  background-color: #333;
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+  color: white;
+}
+
+a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
+
+h1, h2, h3, h4, p, ul, li {
+  color: white;
+}
+
+ .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        /* Style the topnav links */
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* Change color on hover */
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+/* Style for the clock and date */
+.clock {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+body {
+  margin-top: 60px; /* Adjust to avoid content overlap with the clock */
+  font-family: Verdana;
+  background-color: black;
+  color: white;
+}
+.menu {
+  float: left;
+  width: 20%;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #444;
+}
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.right {
+  background-color: grey;
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+}
+@media only screen and (max-width:800px) {
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
+<script>
+// JavaScript for real-time clock and date
+function updateClock() {
+  const clockElement = document.getElementById("clock");
+  const now = new Date();
+
+  // Get time components
+  const hours = String(now.getHours()).padStart(2, '0');
+  const minutes = String(now.getMinutes()).padStart(2, '0');
+  const seconds = String(now.getSeconds()).padStart(2, '0');
+  const timeString = `${hours}:${minutes}:${seconds}`;
+
+  // Get date components
+  const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+  const dateString = now.toLocaleDateString('en-US', options);
+
+  // Combine date and time
+  clockElement.innerHTML = `${dateString} | ${timeString}`;
+}
+setInterval(updateClock, 1000); // Update clock every second
+window.onload = updateClock; // Initialize clock when the page loads
+</script>
+</head>
+<body>
+<div class="clock" id="clock"></div>
+
+<script>
+// JavaScript for real-time clock and date
+function updateClock() {
+  const clockElement = document.getElementById("clock");
+  const now = new Date();
+
+  // Get time components
+  const hours = String(now.getHours()).padStart(2, '0');
+  const minutes = String(now.getMinutes()).padStart(2, '0');
+  const seconds = String(now.getSeconds()).padStart(2, '0');
+  const timeString = `${hours}:${minutes}:${seconds}`;
+
+  // Get date components
+  const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+  const dateString = now.toLocaleDateString('en-US', options);
+
+  // Combine date and time
+  clockElement.innerHTML = `${dateString} | ${timeString}`;
+}
+setInterval(updateClock, 1000); // Update clock every second
+window.onload = updateClock; // Initialize clock when the page loads
+</script>
+</head>
+<body>
+<div class="clock" id="clock"></div>
+
+</style>
+</head>
+
+<body style="font-family:Courier;">
+<title>gallery ☾⋆⁺ </title>
+<link rel="icon" type="jpg" href="images/logo.jpg"> 
+<div style="background-color:#222;padding:15px;">
+  <h1><center>gallery ˙⋆✮</center></h1>
+  <h3><center> ──★ a collection of moments and inspirations ݂۫</center></h3>
+</div>
+
+<div class="topnav">
+    <a href="index.html">home ☾⋆⁺₊🎧✧</a>
+   <a href="biodata.html">biodata ──★ ˙🧷 ̟ !!</a>
+    <a href="education.html">education ⋆ ˚｡✎</a>
+       <a href="experience.html">experience ˙⋆✮</a>
+       <a href="family.html">family ˖⋆࿐໋</a>
+</div>
+
+</*List of favourite words*/>
+<div style="overflow:auto">
+  <div class="menu">
+  <div class="menuitem">limerence</div>
+    <div class="menuitem">quiescent</div>
+    <div class="menuitem">reverie</div>
+    <div class="menuitem">labyrinthine</div>
+    <div class="menuitem">eudaimonia</div>
+  </div>
+
+  <div class="main">
+   <img src="images/face.jpg" alt="Face" width="800" height="280">
+  </div>
+
+ <div class="main">
+    <br><br><h2>snapshots ‧₊˚彡</h2>
+	<img src="images/vinyl.jpg" alt="vinyl" width="150" height="150">
+	<img src="images/gallerypic2.jpg" alt="me with batik" width="150" height="150">
+	<img src="images/fish.jpg" alt="fish" width="150" height="150">
+	<img src="images/gallerypic3.jpg" alt="selfie in car" width="150" height="150">
+	<img src="images/gallerypic4.jpg" alt="selfie" width="150" height="150">
+	<img src="images/guitar.jpg" alt="guitar" width="150" height="150">
+	<img src="images/gallerypic5.jpg" alt="me in arcade" width="150" height="150">
+	<img src="images/cat.jpg" alt="cat" width="150" height="150">
+	<img src="images/headphonebook.jpg" alt="headphone on top of a book" width="150" height="150">
+	<img src="images/gallerypic6.jpg" alt="shadow" width="150" height="150">
+	<img src="images/spiral.jpg" alt="spiral" width="150" height="150">
+	<img src="images/gallerypic7.jpg" alt="sideway selfie" width="150" height="150">
+	<img src="images/gallerypic11.jpg" alt="me taking picture of food" width="150" height="150">
+	<img src="images/gallerypic13.jpg" alt="lights" width="150" height="150">
+	<img src="images/gallerypic9.jpg" alt="me in class" width="150" height="150">
+	<img src="images/fullmoon.jpg" alt="fullmoon" width="150" height="150">
+	<img src="images/gallerypic12.jpg" alt="clarinet" width="150" height="150">
+	<img src="images/gallerypic10.jpg" alt="me with totebag" width="150" height="150">
+	<img src="images/gallerypic14.jpg" alt="beetlejuice" width="150" height="150">
+	<img src="images/gallerypic1.jpg" alt="outfit" width="150" height="150">
+  </div>
+  
+
+  <div class="right">
+    <h2>recorded  ↪𓏲 ๋࣭  ࣪ ˖</h2>
+    <div class="video-container">
+
+	<center><iframe width="185" height="320" src="videos/galleryvid3.mp4"  type="videos/mp4"/>frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; 	picture-in-picture" allowfullscreen></iframe></center>
+
+        <center><iframe width="200" height="150" src="videos/galleryvid1.mp4"  type="videos/mp4"/>frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; 	picture-in-picture" allowfullscreen></iframe></center>
+
+	<center><iframe width="185" height="320" src="videos/galleryvid2.mp4"  type="videos/mp4"/>frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; 		picture-in-picture" allowfullscreen></iframe></center>
+		</div>
+
+    <div id="secret" onclick="easterEgg()" style="color:black"><center>⊹♡✮ ⋆ ˚｡𖦹 ⋆｡°✩</center></div>
+
+<script>
+let clickCount = 0;
+
+// Array of dynamic messages
+const messages = [
+  "You just unlocked the secret button! ⋆˙⟡♡",
+  "Persistence pays off—welcome to the hidden corner! ʚɞ",
+  "You're amazing for finding this! Keep exploring. ✨🪐♡✧˖ °",
+  "Fun fact: The creator of this site loves consuming media ᶻ 𝗓 𐰁 .ᐟ",
+  "Surprise! You're officially a VIP visitor ˚₊‧꒰ა ☆ ໒꒱ ‧₊˚",
+  "Secret unlocked: Always believe in yourself. ᯓ★",
+  "You're a true adventurer! ๋࣭ ⭑⚝๋࣭ ⭑",
+  "Congratulations! You found a hidden gem. 💎.☘︎ ݁˖",
+  "You're unstoppable! Thanks for finding this Easter egg 𓂃⋆.˚",
+  "That's it for my website !! think you know me better now?  ࣪𖤐.ᐟ",
+   
+];
+
+// Easter egg function
+function easterEgg() {
+  clickCount++;
+  if (clickCount === 3) {
+    // Select a random message
+    const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+    alert(randomMessage);
+    clickCount = 0; // Reset the counter
+  }
+}
+</script>    
+  </div>
+</div>
+
+<!-- Contact Me Section -->
+<div class="contact-me" style="margin: 20px auto; text-align: center; background-color: #222; padding: 20px; border-radius: 10px; width: 60%; color: white; font-family: 'Courier New', Courier, monospace;">
+  <h2>feedback / contact me ── .✦</h2>
+  <form id="contact-form" style="display: flex; flex-direction: column; align-items: center;">
+    <label for="name" style="margin: 10px 0;"> your name:</label>
+    <input type="text" id="name" name="name" required placeholder="enter your name ┆.ᐟ ★" style="padding: 8px; width: 80%; border: none; border-radius: 5px; font-family: 'Courier New', Courier, monospace;">
+
+    <label for="email" style="margin: 10px 0;"> your email:</label>
+    <input type="email" id="email" name="email" required placeholder="enter your email >✉︎ᯓᡣ𐭩" style="padding: 8px; width: 80%; border: none; border-radius: 5px; font-family: 'Courier New', Courier, monospace;">
+
+    <label for="message" style="margin: 10px 0;"> your message:</label>
+    <textarea id="message" name="message" rows="4" required placeholder="write your message here ˖◛+" style="padding: 8px; width: 80%; border: none; border-radius: 5px; font-family: 'Courier New', Courier, monospace;"></textarea>
+
+    <button type="submit" style="margin: 20px 0; padding: 10px 20px; background-color: #444; color: white; border: none; border-radius: 5px; cursor: pointer; font-family: 'Courier New', Courier, monospace;">Submit</button>
+  </form>
+
+  <!-- Success Message --->
+  <div id="success-message" style="display: none; margin-top: 20px; color: lightgreen; font-family: 'Courier New', Courier, monospace;">
+    thank you for reaching out! I'll get back to you soon  ִֶָ 𓂃⊹ ִֶָ 
+  </div>
+</div>
+
+<script>
+  // JavaScript to handle form submission
+  document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevent actual form submission
+
+    // Display success message
+    document.getElementById('success-message').style.display = 'block';
+
+    // Optionally, clear the form
+    this.reset();
+  });
+</script>
+
+
+<div style="background-color:#222;text-align:center;padding:10px;margin-top:7px;font-size:12px;">
+  <p>© 2024 Liza's Diaries <sub>⩇⩇:⩇⩇</sub></p>
+</div>
+
+</body>
+</html>
